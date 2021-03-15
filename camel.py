@@ -36,9 +36,9 @@ while not done :
         print()
     
     elif userInput.upper() == "D" :
-        print("You stop for the night.")
+        print("You took a break.")
         print("Your camel is happy.")
-        print("The natives don't stop.")
+        print("The zoo keepers did not give up.")
         print()
         camelTiredness = 0
         nativesTraveled += random.randrange(7, 15)
@@ -54,15 +54,15 @@ while not done :
             thirst = 0
             camelTiredness = 0
             canteen = 3
-            print("As you travel you happen upon an oasis!")
-            print("You fill your canteen and your stomach with water, and")
-            print("Your camel is rested!")
-            print("The natives continue the chase.")
+            print("You found some water")
+            print("You start to drink water , and")
+            print("Your camel is resting!")
+            print("The zoo keepers continue the chase.")
             print()
         else :
             print("You push onward at full speed, moving a total of", miles, "miles")
             print("Your thirst increases.")
-            print("The natives continue the chase.")
+            print("The zookeepers continue the run.")
             print()
    
     elif userInput.upper() == "B" :
@@ -76,15 +76,15 @@ while not done :
             thirst = 0
             camelTiredness = 0
             canteen = 3
-            print("As you travel you happen upon an oasis!")
-            print("You fill your canteen and your stomach with water, and")
+            print("You found some water")
+            print("You start to drink water , and")
             print("Your camel is rested!")
-            print("The natives continue the chase.")
+            print("The zoo keeprs continue the chase.")
             print()
         else :
             print("You move forward, moving a total of", miles, "miles")
             print("Your thirst increases.")
-            print("The natives continue the chase.")
+            print("The zoo keepers continue the chase.")
             print()
    
     elif userInput.upper() == "A" :
@@ -93,7 +93,7 @@ while not done :
             thirst = 0
             print("You take a drink")
         else:
-            print("Your canteen is empty. You imagine yourself as a lifeless, dry husk.")
+            print("Your canteen is empty. You imagine yourself as dead meat.")
     
   
     if thirst > 5 :
@@ -105,14 +105,14 @@ while not done :
         print("You are thirsty!")
     
     if milesTraveled >= 200 :
-        print("Congratulations! You have crossed the entire desert!")
+        print("Congratulations! You have escaped!")
         print("You win!")
         print()
         done = True
   
     if camelTiredness > 8 :
         print("Your camel died of exhaustion!")
-        print("With no camel, the natives catch up to you and kill you")
+        print("With no camel, the zoo keepers catch up to you and arrest you")
         print("on the spot.")
         print("Game Over.")
         print()
@@ -122,15 +122,15 @@ while not done :
         print()
     
     if milesTraveled - nativesTraveled <= 0 :
-        print("The natives have caught up with you!")
-        print("They kill you on the spot, and take their camel back.")
+        print("The zoo keepers have caught up with you!")
+        print("They catch up to you and arrest you, and take their camel back.")
         print("Game Over.")
         print()
         done = True
     elif milesTraveled - nativesTraveled < 15 :
         print("You see faint shapes on the horizon behind you.")
-        print("The natives are getting close!")
+        print("The zoo keepers are getting close!")
         print()
 
-print("Exiting Game. Goodbye.")
+print(" Goodbye.")
 input("")
